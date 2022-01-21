@@ -1,0 +1,102 @@
+*{
+margin: 0;
+box-sizing: border-box;
+
+}
+html{
+height: 100%;    
+background-color: honeydew;
+
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+
+}
+.header, .spiel-header{
+    height: 100px;
+    background-color: lightgrey;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.start-container{
+    font-size: 20pt;
+    margin:auto;    
+
+}
+.startformular{    
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+    
+
+input, label{
+    width: 50%;
+    margin:5px;
+    float: left;
+    font-size: 20pt;
+   }
+input{
+     border: none;
+    border-bottom: 1px solid black;
+}
+
+.btn2{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: stretch;
+}
+.btn-start, .btn-reset{
+    background-color: lightgrey;
+    border: 1px solid black;
+    float: left;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.spiel-container{
+    background-color: honeydew;
+    font-size: 20pt;
+    position: relative;
+    transform: scale(0);
+    transition: transform 0,5 ease-in-out ;
+    margin: auto;
+    &.show-form{
+        transform: scale(1);
+    }
+    .spielfeld{
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        align-content: center;
+        justify-content: center;
+}
+        
+    }
+    .box{
+        width: 100px;
+        height: 100px;
+        cursor: pointer;        
+        border: 1px solid black;
+        text-align: center;
+        padding-top: 40%;
+        }
+.winner{
+    height: 100px;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+}
+.alert{
+    padding-top: 5%;
+    color: red;
+    float:left;
+}

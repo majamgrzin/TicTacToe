@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="start-container" id="start-container">
+        <h2 class="header" id="header">Tic Tac Toe - Game</h2>
+        <form class="startformular">
+            <label>Player 1:</label>
+            <input class="standardform" id="player-1" type="text" required>
+            <label>Player 2:</label>
+            <input class="standardform" id="player-2" type="text" required>
+            <p id="error"></p>
+            <div class="btn1">
+                <div class="btn-start" id="btn-start">Start Game</div>
+            </div>
+        </form>
+    </div>
+
+    <div class="spiel-container" id="spiel-container">
+        <h2 class="spiel-header" id="player-move"></h2>
+        <form class="spielfeld">
+            <div class="box" data-index="0"></div>
+            <div class="box" data-index="1"></div>
+            <div class="box" data-index="2"></div>
+            <div class="box" data-index="3"></div>
+            <div class="box" data-index="4"></div>
+            <div class="box" data-index="5"></div>
+            <div class="box" data-index="6"></div>
+            <div class="box" data-index="7"></div>
+            <div class="box" data-index="8"></div>
+        </form>
+        <h2 class="winner"></h2>
+        <div class="btn2">
+            <div class="btn-reset" id="btn-reset">Restart</div>
+        </div>
+
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
